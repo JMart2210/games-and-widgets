@@ -17,4 +17,4 @@ The Deck of Cards API request happens at page load. The deck is distributed even
 
 * Implement some kind of round system, so users can play to some conclusion.
 
-<img src="/warExample.gif">
+<img src="warExample.gif">
