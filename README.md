@@ -13,3 +13,13 @@ The tricky part was they could also hit the equals key to get the result. The us
 I resolved this by storing a temporary result, the next operand, and a boolean variable "first". I then implemented some conditional logic with those variables to make the program function intuitively. I heavily commented the code to explain my thought process at each step.<br/>
 **Live version here**: https://jmart2210.github.io/calculator/ <br/>
 <img src="./calculator/calculator.gif" alt="Calculator Example Gif">
+# This is War
+Simple implementation of the classic card game War.
+
+**Live version here**: https://jmart2210.github.io/this-is-war/
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript, & Deck of Cards API
+
+The Deck of Cards API request happens at page load. The deck is distributed evenly between each player as an array. Each round the top card is drawn from the hands and compared. The player with the higher card takes the pot. If the initial cards are equal, a "war" ensues, increasing the stakes. Instead of just pushing the pot to the back of the winning player's hand, I chose to give each player a "wins" pile separate from their hand. Currently there is no benefit to doing it this way, but there are a number of optimizations I could make that would make use of the additional architecture. 
