@@ -1,0 +1,7 @@
+# Tic-Tac-Toe
+**Live version here**: https://jmart2210.github.io/top-tic-tac-toe/<br/>
+A classic tic-tac-toe game built with modularity, separation of concerns, and event-driven programming in mind. <br />
+The interface has been designed with responsive design principles and supports both desktop and mobile devices.<br />
+The code includes a gamePlayModule that handles the game logic, including player turns, checking for win conditions, and updating the game board. The module uses an object-oriented approach and encapsulation to manage game state and track player information.<br />
+**Optimizations**: I made the cpu move selection to first return if there is a winning move, second if your opponent has a "losing" move so you can block it, and lastly the next best moved based on how useful it appears to be. It determines usefulness by brute force, comparing how many times a given move shows up in the remaining winning combos. Currently the cpu is unbeatable. I think it would be fun to implement another difficulty setting where the cpu selection has a chance to be randomized when there is no obvious move (nothing that wins or loses the game). This would allow potential blunders that the user may be able to take advantage of.<br/>
+<img src="tic-tac-toe-example.gif" alt="Tic-Tac-Toe example">

@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%;
+}
+*{
+  box-sizing: border-box;
+}
+button {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  text-align: center;
+}
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  height: 750px;
+  margin: 5% auto;
+}
+.gameContainer > div {
+  flex: 1;
+  display: flex;
+}
+.gameBtn {
+  flex: 1;
+  background-color: white;
+  border: 1px solid gray;
+  font-size: 14rem;
+}
+button.top {
+  border-top: none;
+}
+button.left {
+  border-left: none;
+}
+button.right {
+  border-right: none;
+}
+button.bot {
+  border-bottom: none;
+}
+.main-btns button {
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+.winning {
+  text-shadow: rgb(227, 255, 69) 0 0 40px;
+  font-size: 19rem;
+}
+.gameOverContainer {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.813);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 3.5rem;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.blur {
+  background-size:cover;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px);
+  }
+.visible {
+  display: block;
+}
+@media all and (max-width: 750px) {
+  .gameContainer {
+    width: 350px;
+    height: 350px;
+  }
+  .gameBtn {
+    font-size: 7rem;
+  }
+  .gameOverContainer {
+    font-size: 1.5rem;
+    top: 15%;
+  }
+}
